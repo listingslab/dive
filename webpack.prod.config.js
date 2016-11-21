@@ -86,7 +86,7 @@ module.exports = {
     // Required to inject NODE_ENV within React app.
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('development') // eslint-disable-line quote-props
+        'NODE_ENV': JSON.stringify('production') // eslint-disable-line quote-props
       }
     }),
     new webpack.HotModuleReplacementPlugin(),
