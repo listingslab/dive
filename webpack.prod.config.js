@@ -110,7 +110,7 @@ module.exports = {
     new ExtractTextPlugin('[name].[chunkhash].css'),
 
     // Remove comment to dedupe duplicating dependencies for larger projects
-    // new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.DedupePlugin(),
 
     // Separate vendor and manifest files
     new webpack.optimize.CommonsChunkPlugin({
