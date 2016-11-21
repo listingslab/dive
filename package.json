@@ -5,9 +5,18 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development webpack-dev-server --inline",
+    "build": "NODE_ENV=production webpack --config webpack.prod.config.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listingslab/dive.git"
+  },
+  "author": {
+    "name": "Chris Dorward",
+    "email": "listingslab@gmail.com",
+    "url": "http://listingslab.com"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^15.4.0",
@@ -19,6 +28,8 @@
     "babel-loader": "^6.2.8",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.0",
     "html-webpack-plugin": "^2.24.1",
     "json-loader": "^0.5.4",
