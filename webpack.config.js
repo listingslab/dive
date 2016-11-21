@@ -21,7 +21,7 @@ const PUBLIC = path.join(__dirname, 'app/public');
 const TEMPLATE = path.join(__dirname, 'app/templates/index.html');
 const NODE_MODULES = path.join(__dirname, 'node_modules');
 const HOST = process.env.HOST || 'localhost';
-const PORT = process.env.PORT || '8080';
+const PORT = process.env.PORT || 8080;
 
 module.exports = {
   // Paths and extensions
@@ -36,7 +36,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
-  modules: {
+  module: {
     loaders: [
       {
         test: /\.jsx?$/,
@@ -56,15 +56,13 @@ module.exports = {
     ]
   },
   // Configure PostCSS plugins
-  postcss: function processPostcss(webpack) { // eslint-disable-line no-shadow
+  postcss: function processPostcss(webpack) {  // eslint-disable-line no-shadow
     return [
       postcssImport({
         addDependencyTo: webpack
       }),
       precss,
-      autoprefixer({
-        browsers: ['last 2 versions']
-      })
+      autoprefixer({ browsers: ['last 2 versions'] })
     ];
   },
   // Source maps used for debugging
