@@ -4,10 +4,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import dive from './reducers'
+import dive from './reducers';
 import App from './App';
 
-let store = createStore(dive);
+const store = createStore(dive);
 
 ReactDOM.render(
   <Provider store={store}>

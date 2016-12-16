@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const App = () => (
   <div id="dive_app">
-    Dive App
+    The Dive Application...
   </div>
-)
+);
 
-export default App
+export default App;
