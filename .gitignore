@@ -3,3 +3,6 @@ build
 .DS_Store
 npm-debug.log
 .eslintcache
+
+# Test and Coverage ouput
+coverage/
