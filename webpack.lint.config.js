@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 // Initialization
 const webpack = require('webpack');
 
@@ -16,6 +18,8 @@ const path = require('path');
 const postcssImport = require('postcss-easy-import');
 const precss = require('precss');
 const autoprefixer = require('autoprefixer');
+
+/* eslint-enable import/no-extraneous-dependencies */
 
 // Constants
 const APP = path.join(__dirname, 'src');
@@ -44,8 +48,8 @@ module.exports = {
     extensions: ['', '.js', '.jsx', '.css']
   },
   eslint: {
-   configFile: LINT,
-   emitError: true
+    configFile: LINT,
+    emitError: true
   },
   module: {
     loaders: [
@@ -125,10 +129,10 @@ module.exports = {
         ]
       }
     ),
-    new HtmlWebpackPlugin ({
+    new HtmlWebpackPlugin({
       template: HTML,
       // JS placed at the bottom of the body element
       inject: 'body'
     })
   ]
-}
+};
