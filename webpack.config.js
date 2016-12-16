@@ -16,9 +16,9 @@ const autoprefixer = require('autoprefixer');
 // Constants
 const APP = path.join(__dirname, 'src');
 const BUILD = path.join(__dirname, 'build');
-const STYLE = path.join(__dirname, 'src/style.css');
-const PUBLIC = path.join(__dirname, 'src/public');
-const TEMPLATE = path.join(__dirname, 'src/templates/index.html');
+const STYLE = path.join(__dirname, 'src/styles/style.css');
+const ASSETS = path.join(__dirname, 'src/assets');
+const HTML = path.join(__dirname, 'src/html/index.html');
 const NODE_MODULES = path.join(__dirname, 'node_modules');
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
@@ -91,7 +91,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([
-      { from: PUBLIC, to: BUILD }
+      { from: ASSETS, to: BUILD }
     ],
       {
         ignore: [
@@ -101,7 +101,7 @@ module.exports = {
       }
     ),
     new HtmlWebpackPlugin ({
-      template: TEMPLATE,
+      template: HTML,
       // JS placed at the bottom of the body element
       inject: 'body'
     })
