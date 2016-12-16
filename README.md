@@ -27,3 +27,5 @@ Profiles the webpack distribution bundle for analysis
 Using Atom editor? Install IDE linting. It's proper helpfgul
 
 ```apm install linter-eslint```
+&
+```apm install linter-stylelint```

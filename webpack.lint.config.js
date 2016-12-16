@@ -52,6 +52,13 @@ module.exports = {
     emitError: true
   },
   module: {
+    preloaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['eslint'],
+        include: APP
+      }
+    ],
     loaders: [
       {
         test: /\.jsx?$/,

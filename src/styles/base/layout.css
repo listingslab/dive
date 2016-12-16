@@ -15,6 +15,7 @@
 
 .stripe--slim {
   @extend .stripe;
+
   padding: 10px 0;
 }
 
@@ -52,8 +53,8 @@
   color: color(white shade(20%));
 }
 
-
 .nav__brand {
   @extend .nav__link;
+
   font-weight: bold;
 }
