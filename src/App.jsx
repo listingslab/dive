@@ -1,9 +1,8 @@
 import React from 'react';
+import Example from './components/example';
 
 const App = () => (
-  <div id="dive_app">
-    The Dive Application...
-  </div>
+  <Example />
 );
 
 export default App;
