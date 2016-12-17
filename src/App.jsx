@@ -1,3 +1,7 @@
+/**
+ * Created by Chris D on 17/12/2016.
+ */
+
 import React from 'react';
 import verge from 'verge';
 import Example from './components/example';
@@ -16,7 +20,7 @@ class App extends React.Component {
 
   updateDimensions() {
     // https://www.npmjs.com/package/verge
-    // console.log(verge.viewport());
+    this.setState(verge.viewport());
   }
 
   render() {

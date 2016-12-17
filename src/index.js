@@ -1,3 +1,7 @@
+/**
+ * Created by Chris D on 17/12/2016.
+ */
+
 import 'babel-polyfill';
 
 import React from 'react';
@@ -17,7 +21,7 @@ store.dispatch({
   }
 });
 
-console.log(store.getState());
+// console.log(store.getState());
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,3 +1,7 @@
+/**
+ * Created by Chris D on 17/12/2016.
+ */
+
 import React, { Component } from 'react';
 import Rndwin from 'react-rnd';
 
