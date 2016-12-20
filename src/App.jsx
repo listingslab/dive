@@ -1,10 +1,11 @@
 /**
  * Created by Chris D on 17/12/2016.
+ * Application Entrypoint
  */
 
 import React from 'react';
 import verge from 'verge';
-import Example from './components/example';
+import Window from './components/Window/Window';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
@@ -25,7 +26,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Example />
+      <Window />
     );
   }
 }

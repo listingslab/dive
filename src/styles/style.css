@@ -24,8 +24,9 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background: url('/img/bg.jpg') rgba(0, 0, 0, 0.3);
-  background-size: cover;
+  background: url('/img/background-pattern-006.gif') rgba(0, 0, 0, 0.3);
+
+  /* background-size: cover; */
   overflow: hidden;
 }
 

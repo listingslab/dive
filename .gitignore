@@ -1,8 +1,8 @@
 node_modules
-build
 .DS_Store
 npm-debug.log
 .eslintcache
 
-# Test and Coverage ouput
+# Test, build and Coverage output
 coverage/
+build/

@@ -13,16 +13,6 @@ import App from './App';
 
 const store = createStore(dive);
 
-store.dispatch({
-  type: 'ADD_DIMENSIONS',
-  text: {
-    width: 200,
-    height: 200
-  }
-});
-
-// console.log(store.getState());
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
