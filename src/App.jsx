@@ -4,11 +4,19 @@
  */
 
 import React from 'react';
+import { connect } from 'react-redux';
 import verge from 'verge';
 import Window from './components/Window/Window';
 
 // eslint-disable-next-line react/prefer-stateless-function
-class App extends React.Component {
+export class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: []
+    };
+  }
 
   componentDidMount() {
     window.addEventListener('resize', this.updateDimensions);
@@ -24,11 +32,18 @@ class App extends React.Component {
     this.setState(verge.viewport());
   }
 
+  handleThumbClick(selectedImage) {
+    this.setState({
+      image: selectedImage
+    })
+  }
+
   render() {
     return (
-      <Window />
+      <div onClick={this.handleThumbClick.bind('dslfj')}>
+        Trigger Action
+      </div>
     );
   }
 }
-
-export default App;
+export default connect()(App);
